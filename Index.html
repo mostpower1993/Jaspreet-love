@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Jaspreet ❤️</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{width:100%;min-height:100%;font-family:Georgia,"Times New Roman",serif}
+body{
+  overflow-x:hidden;color:#fff;
+  background:linear-gradient(145deg,#12051d,#3a0c35 45%,#8b285d 72%,#f17b78);
+}
+body:before{
+  content:"";position:fixed;inset:0;z-index:-2;
+  background:
+    radial-gradient(circle at 50% 25%,rgba(255,130,190,.28),transparent 32%),
+    radial-gradient(circle at 15% 85%,rgba(255,70,110,.24),transparent 28%),
+    radial-gradient(circle at 85% 70%,rgba(255,190,120,.2),transparent 30%);
+}
+.scene{min-height:100vh;position:relative;padding:48px 18px 55px;display:flex;justify-content:center;align-items:center}
+.card{
+  width:min(720px,100%);text-align:center;position:relative;
+  padding:42px 22px 36px;border:1px solid rgba(255,255,255,.25);
+  border-radius:34px;background:rgba(35,5,30,.34);
+  box-shadow:0 25px 80px rgba(0,0,0,.42),inset 0 0 60px rgba(255,100,170,.08);
+  backdrop-filter:blur(9px);
+}
+.flowers{position:absolute;left:0;right:0;top:-25px;display:flex;justify-content:space-around;pointer-events:none}
+.rose{font-size:38px;filter:drop-shadow(0 4px 10px rgba(255,30,90,.6))}
+.small{font-size:18px;letter-spacing:4px;text-transform:uppercase;opacity:.9}
+h1{
+  margin:15px 0 8px;font-size:clamp(58px,14vw,118px);line-height:.95;
+  font-weight:500;font-style:italic;
+  text-shadow:0 0 8px #fff,0 0 22px #ff6da9,0 0 45px #ff327d;
+  animation:pulse 2.5s ease-in-out infinite;
+}
+.name{font-size:clamp(34px,8vw,58px);font-style:italic;color:#ffd8e8;margin-bottom:28px}
+.message{font-size:20px;line-height:1.75;max-width:590px;margin:auto;color:#ffeaf3}
+.divider{margin:27px auto;width:100px;height:1px;background:rgba(255,255,255,.6);position:relative}
+.divider:after{content:"♥";position:absolute;left:50%;top:-13px;transform:translateX(-50%);font-size:20px}
+.shayari{
+  margin:10px auto 28px;padding:22px 18px;max-width:590px;
+  border-radius:22px;background:rgba(255,255,255,.09);
+  border:1px solid rgba(255,190,220,.2);
+  font-size:19px;line-height:1.9;font-style:italic;color:#ffe0ec
+}
+button{
+  border:1px solid rgba(255,255,255,.55);background:rgba(255,90,145,.2);
+  color:#fff;border-radius:999px;padding:15px 30px;font-size:17px;
+  cursor:pointer;box-shadow:0 0 25px rgba(255,70,140,.35);
+  transition:.25s
+}
+button:hover{transform:scale(1.05);background:rgba(255,100,160,.35)}
+.hidden{display:none}.reveal{margin-top:22px;font-size:22px;line-height:1.6;color:#fff0f6}
+.petal{
+  position:fixed;top:-40px;z-index:5;pointer-events:none;opacity:.8;
+  animation:fall linear forwards
+}
+.heart{
+  position:fixed;bottom:-30px;z-index:4;pointer-events:none;
+  animation:floatUp linear forwards;opacity:.75
+}
+.sparkle{position:absolute;font-size:22px;animation:twinkle 1.7s infinite alternate}
+.s1{top:16%;left:8%}.s2{top:27%;right:9%}.s3{top:65%;left:10%}.s4{top:72%;right:8%}
+@keyframes pulse{50%{transform:scale(1.035)}}
+@keyframes fall{to{transform:translate3d(90px,110vh,0) rotate(520deg);opacity:0}}
+@keyframes floatUp{to{transform:translate3d(var(--drift),-110vh,0) scale(1.5);opacity:0}}
+@keyframes twinkle{to{opacity:.15;transform:scale(.65)}}
+@media(max-width:500px){
+  .scene{padding:38px 12px}.card{padding:38px 16px 30px;border-radius:28px}
+  .message{font-size:17px}.shayari{font-size:17px}
+}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="sparkle s1">✦</div><div class="sparkle s2">♡</div>
+  <div class="sparkle s3">✦</div><div class="sparkle s4">♡</div>
+  <main class="card">
+    <div class="flowers"><span class="rose">🌹</span><span class="rose">🌸</span><span class="rose">🌹</span></div>
+    <div class="small">A little message from my heart</div>
+    <div class="name">Jaspreet ❤️</div>
+    <h1>I Love You</h1>
+    <div class="divider"></div>
+    <p class="message">
+      Jaspreet, you are not just a beautiful part of my life —
+      you are the reason so many of my days feel special.
+      Your smile makes everything brighter, and having you in my life
+      is something I will always be grateful for. ❤️
+      <br><br>
+      No matter how many words I write, they will never be enough
+      to explain how much you mean to me.
+    </p>
+    <div class="divider"></div>
+    <div class="shayari">
+      Teri har ada mein ek nasha sa hai,<br>
+      Teri muskurahat mein meri dua sa hai,<br>
+      Tu saath ho toh har lamha khoobsurat hai,<br>
+      Tu hi meri khushi, tu hi meri duniya sa hai… ❤️
+    </div>
+    <button onclick="showLove()">Tap for a little surprise 💌</button>
+    <div id="reveal" class="reveal hidden">
+      🌹 Jaspreet, you mean more to me than words can say. 🌹<br>
+      <b>I love you — today, tomorrow & always. ❤️</b>
+    </div>
+  </main>
+</div>
+<script>
+function petal(){
+  const p=document.createElement('div');p.className='petal';
+  p.textContent=['🌸','🌹','💗','🌺'][Math.floor(Math.random()*4)];
+  p.style.left=Math.random()*100+'vw';
+  p.style.fontSize=(12+Math.random()*20)+'px';
+  p.style.animationDuration=(5+Math.random()*6)+'s';
+  document.body.appendChild(p);setTimeout(()=>p.remove(),12000);
+}
+function heart(){
+  const h=document.createElement('div');h.className='heart';
+  h.textContent=['❤','♡','💕'][Math.floor(Math.random()*3)];
+  h.style.left=Math.random()*100+'vw';
+  h.style.fontSize=(14+Math.random()*24)+'px';
+  h.style.setProperty('--drift',(Math.random()*180-90)+'px');
+  h.style.animationDuration=(5+Math.random()*5)+'s';
+  document.body.appendChild(h);setTimeout(()=>h.remove(),11000);
+}
+setInterval(petal,650);setInterval(heart,1100);
+function showLove(){
+  document.getElementById('reveal').classList.remove('hidden');
+  for(let i=0;i<14;i++) setTimeout(heart,i*90);
+}
+</script>
+</body>
+</html>
